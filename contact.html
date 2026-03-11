@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- أضف هذا في <head> قبل ملفات CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Cairo:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --arabic-font: 'Tajawal', 'Cairo', sans-serif;
+        }
+
+        *:not(i):not(.fa):not([class*="fa-"]):not(.fab):not(.fas):not(.far) {
+            font-family: var(--arabic-font) !important;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.svg">
+    <title>منظومة الحجز في مركبات و مراكز إقامة الشباب</title>
+    <!-- swiper css -->
+    <link rel="stylesheet preload" href="assets/css/plugins/swiper.min.css" as="style">
+    <!-- Custom Font css -->
+
+    <!-- magnific popup css -->
+    <link rel="stylesheet preload" href="assets/css/plugins/magnific-popup.css" as="style">
+    <!-- metismenu css -->
+    <link rel="stylesheet preload" href="assets/css/plugins/metismenu.css" as="style">
+    <!-- bootstrap css -->
+    <link rel="stylesheet preload" href="assets/css/vendor/bootstrap.min.css" as="style">
+    <!-- bootstrap css -->
+    <link rel="stylesheet preload" href="assets/css/vendor/animate.css" as="style">
+    <!-- odometer css -->
+    <link rel="stylesheet preload" href="assets/css/plugins/odometer.css" as="style">
+    <!-- fontawesome css -->
+    <link rel="stylesheet preload" href="assets/css/plugins/fontawesome.min.css" as="style">
+    <!-- Nice Select css -->
+    <link rel="stylesheet preload" href="assets/css/plugins/nice-select.css" as="style">
+    <!-- Custom css -->
+    <link rel="stylesheet preload" href="assets/css/style.css" as="style">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.custom-select').forEach(select => {
+                const trigger = select.querySelector('.custom-select-trigger');
+                const options = select.querySelectorAll('.option');
+                const hiddenInput = select.querySelector('input[type="hidden"]');
+
+                if (!hiddenInput) return;
+
+                options.forEach(option => {
+                    option.addEventListener('click', () => {
+                        const value = option.textContent.trim();
+                        trigger.textContent = value;
+                        hiddenInput.value = value;
+                    });
+                });
+
+                trigger.addEventListener('click', () => {
+                    select.classList.toggle('open');
+                });
+            });
+        });
+    </script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@3,200..1000&family=Changa:wght@200..800&display=swap');
+    </style>
+
+</head>
+
+<body class="kayaking">
+
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span style="--i:9;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <div class="loader-plane"></div>
+        </div>
+    </div>
+    <!-- preloader end -->
+    <!-- header area start -->
+    <header class="header-style-two header--sticky header-nine">
+        <div class="header-top">
+            <div class="header-top-inner">
+                <div class="left">
+                    <p class="desc cw">أفضل ما في السفر هنا! <a href="index-nine.html">اكتشف وجهات عام 2026</a></p>
+                </div>
+                    <div class="header-utility">
+                        <div class="right-information">
+                            <ul class="rts-dropdown-menu switcher-currency">
+                                <li class="has-child-menu">
+                                    <ul class="rts-dropdown-menu switcher-language">
+                                        <li class="has-child-menu">
+                                            <a href="#">
+                                                <span class="menu-item">العربية</span>
+                                                <i class="fa-regular fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="menu-item">Français</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="menu-item">English</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+:root {
+    --arabic-font: 'Tajawal', 'Cairo', sans-serif;
+    --changa-font: 'Changa', 'Tajawal', sans-serif;
+}
+
+*:not(i):not(.fa):not([class*="fa-"]):not(.fab):not(.fas):not(.far) {
+    font-family: var(--arabic-font) !important;
+}
+
+/* ===== ENHANCED HEADER SECTION WITH BIGGER BOX ===== */
+.header-main {
+    background-color: white !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+    border-radius: 40px !important;
+    margin: 20px 30px !important;
+    padding: 5px 20px !important;
+    border: 2px solid #f0f0f0 !important;
+}
+
+.header-main-inner {
+    max-width: 1600px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+}
+
+.header-style-one-wrapper {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: nowrap !important;
+    width: 100% !important;
+    gap: 30px !important;
+}
+
+.left-area {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    flex: 1 !important;
+    gap: 30px !important;
+}
+
+.logo-area {
+    flex-shrink: 0 !important;
+}
+
+.logo-area img {
+    max-height: 90px !important;
+    width: auto !important;
+}
+
+.main-nav-area {
+    flex: 1 !important;
+}
+
+.rts-desktop-menu {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    gap: 15px !important;
+}
+
+.rts-desktop-menu .menu-item {
+    flex-shrink: 0 !important;
+}
+
+.header-style-two.header-nine .main-nav-area .rts-desktop-menu .menu-item .rts-dropdown-main-element {
+    padding: 20px 5px !important;
+    font-size: 24px !important;
+    font-weight: 800 !important;
+    color: #1e3c72 !important;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.2;
+    white-space: nowrap !important;
+    border-radius: 50px !important;
+    letter-spacing: 0.5px !important;
+}
+
+.header-style-two.header-nine .main-nav-area .rts-desktop-menu .menu-item .rts-dropdown-main-element:hover {
+    color: #e67e22 !important;
+    background-color: #fef5e7 !important;
+    transform: scale(1.05) !important;
+}
+
+/* Target specific menu items */
+.rts-dropdown-main-element[href="index-nine.html"],
+.rts-dropdown-main-element[href="index-Accommodation.html"],
+.rts-dropdown-main-element[href="contact.html"],
+.rts-dropdown-main-element[href="index-image.html"],
+.rts-dropdown-main-element[href="index.html"] {
+    font-size: 24px !important;
+    font-weight: 800 !important;
+    padding: 30px 25px !important;
+}
+
+.button-area-start {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    flex-shrink: 0 !important;
+    gap: 25px !important;
+}
+
+.shop-btn-area {
+    flex-shrink: 0 !important;
+}
+
+.user-btn.round-btn {
+    width: 70px !important;
+    height: 70px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+}
+
+.user-btn.round-btn svg {
+    width: 35px !important;
+    height: 35px !important;
+}
+
+.user-btn.round-btn svg path {
+    fill: #1e3c72 !important;
+}
+
+.user-btn.round-btn:hover {
+    background: #e67e22 !important;
+    transform: scale(1.1) !important;
+    box-shadow: 0 8px 20px rgba(230,126,34,0.3) !important;
+}
+
+.user-btn.round-btn:hover svg path {
+    fill: white !important;
+}
+
+.rts-btn.btn-primary.border.radius-100 {
+    font-size: 24px !important;
+    font-weight: 900 !important;
+    padding: 18px 40px !important;
+    background: linear-gradient(135deg, #e67e22 0%, #d35400 100%) !important;
+    color: white !important;
+    border: none !important;
+    transition: all 0.3s ease;
+    white-space: nowrap !important;
+    border-radius: 60px !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    box-shadow: 0 10px 20px rgba(230,126,34,0.3) !important;
+    letter-spacing: 1px !important;
+}
+
+.rts-btn.btn-primary.border.radius-100:hover {
+    background: linear-gradient(135deg, #d35400 0%, #e67e22 100%) !important;
+    transform: scale(1.05) translateY(-3px) !important;
+    box-shadow: 0 15px 30px rgba(230,126,34,0.4) !important;
+    color: white !important;
+}
+
+.menu-btn {
+    flex-shrink: 0 !important;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+    padding: 18px 25px !important;
+    border-radius: 50px !important;
+    cursor: pointer !important;
+    display: none !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+}
+
+.menu-btn svg {
+    width: 28px !important;
+    height: 22px !important;
+}
+
+.menu-btn svg rect {
+    fill: #1e3c72 !important;
+}
+
+.menu-btn:hover {
+    background: #e67e22 !important;
+}
+
+.menu-btn:hover svg rect {
+    fill: white !important;
+}
+
+/* ===== ENHANCED MINISTRY SECTION ===== */
+.ministry-header {
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 60px 40px !important;
+    margin: 30px 30px 40px !important;
+    border-radius: 60px !important;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+    border: 3px solid #e67e22 !important;
+    max-width: 1600px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.ministry-header .republic {
+    font-family: 'Changa', 'Tajawal', sans-serif !important;
+    font-weight: 900 !important;
+    font-size: 64px !important;
+    color: #1e3c72 !important;
+    margin-bottom: 15px !important;
+    letter-spacing: 3px !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+.ministry-header .ministry {
+    font-family: 'Changa', 'Tajawal', sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 56px !important;
+    color: #2a5298 !important;
+    margin-bottom: 30px !important;
+    letter-spacing: 2px !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+.ministry-header .booking-btn {
+    font-family: 'Changa', 'Tajawal', sans-serif !important;
+    font-weight: 900 !important;
+    font-size: 52px !important;
+    color: #e67e22 !important;
+    display: inline-block;
+    padding: 20px 50px !important;
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe6cc 100%) !important;
+    border-radius: 80px !important;
+    border: 3px solid #e67e22 !important;
+    box-shadow: 0 10px 20px rgba(230,126,34,0.2) !important;
+}
+
+/* ===== ENHANCED TOP BAR ===== */
+.header-top {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important;
+    padding: 15px 0 !important;
+    border-radius: 40px 40px 0 0 !important;
+    margin: 0 30px !important;
+}
+
+.header-top-inner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: nowrap !important;
+    max-width: 1600px !important;
+    margin: 0 auto !important;
+    padding: 0 30px !important;
+}
+
+.header-top .left .desc {
+    color: white !important;
+    font-size: 20px !important;
+    margin: 0 !important;
+    font-weight: 600 !important;
+}
+
+.header-top .left .desc a {
+    color: #e67e22 !important;
+    font-weight: 900 !important;
+    text-decoration: none !important;
+    margin-right: 10px !important;
+    font-size: 22px !important;
+}
+
+.header-top .left .desc a:hover {
+    text-decoration: underline !important;
+}
+
+.header-top .right {
+    display: flex !important;
+    align-items: center !important;
+    gap: 30px !important;
+}
+
+.social-area {
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    gap: 15px !important;
+}
+
+.social-area li a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 45px !important;
+    height: 45px !important;
+    background-color: rgba(255,255,255,0.2) !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;
+}
+
+.social-area li a:hover {
+    background-color: #e67e22 !important;
+    transform: scale(1.1) !important;
+}
+
+.social-area li a svg {
+    width: 22px !important;
+    height: 22px !important;
+}
+
+.social-area li a svg path {
+    fill: white !important;
+}
+
+.switcher-language .has-child-menu {
+    position: relative !important;
+}
+
+.switcher-language .has-child-menu > a {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    color: white !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    text-decoration: none !important;
+    padding: 12px 25px !important;
+    background-color: rgba(255,255,255,0.2) !important;
+    border-radius: 50px !important;
+}
+
+.switcher-language .has-child-menu > a i {
+    font-size: 18px !important;
+}
+
+.switcher-language .sub-menu {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    background-color: white !important;
+    border-radius: 25px !important;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2) !important;
+    padding: 15px 0 !important;
+    min-width: 200px !important;
+    display: none !important;
+    z-index: 1000 !important;
+}
+
+.switcher-language .has-child-menu:hover .sub-menu {
+    display: block !important;
+}
+
+.switcher-language .sub-menu li {
+    list-style: none !important;
+}
+
+.switcher-language .sub-menu li a {
+    display: block !important;
+    padding: 15px 25px !important;
+    color: #1e3c72 !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.switcher-language .sub-menu li a:hover {
+    background-color: #fef5e7 !important;
+    color: #e67e22 !important;
+    font-size: 19px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+    .header-style-two.header-nine .main-nav-area .rts-desktop-menu .menu-item .rts-dropdown-main-element {
+        padding: 25px 20px !important;
+        font-size: 22px !important;
+    }
+    
+    .rts-btn.btn-primary.border.radius-100 {
+        padding: 16px 35px !important;
+        font-size: 22px !important;
+    }
+    
+    .ministry-header .republic {
+        font-size: 54px !important;
+    }
+    
+    .ministry-header .ministry {
+        font-size: 48px !important;
+    }
+    
+    .ministry-header .booking-btn {
+        font-size: 44px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header-main {
+        margin: 15px 20px !important;
+    }
+    
+    .header-top {
+        margin: 0 20px !important;
+    }
+    
+    .ministry-header {
+        margin: 20px 20px 30px !important;
+        padding: 40px 30px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-nav-area {
+        display: none !important;
+    }
+    
+    .menu-btn {
+        display: block !important;
+    }
+    
+    .header-style-one-wrapper {
+        padding: 15px 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-top .left .desc {
+        font-size: 16px !important;
+    }
+    
+    .social-area {
+        display: none !important;
+    }
+    
+    .rts-btn.btn-primary.border.radius-100 {
+        padding: 12px 25px !important;
+        font-size: 18px !important;
+    }
+    
+    .ministry-header {
+        padding: 30px 20px !important;
+    }
+    
+    .ministry-header .republic {
+        font-size: 38px !important;
+    }
+    
+    .ministry-header .ministry {
+        font-size: 32px !important;
+    }
+    
+    .ministry-header .booking-btn {
+        font-size: 28px !important;
+        padding: 15px 30px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-main {
+        margin: 10px 15px !important;
+    }
+    
+    .header-top {
+        margin: 0 15px !important;
+    }
+    
+    .user-btn.round-btn {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    
+    .ministry-header {
+        padding: 25px 15px !important;
+    }
+    
+    .ministry-header .republic {
+        font-size: 28px !important;
+    }
+    
+    .ministry-header .ministry {
+        font-size: 24px !important;
+    }
+    
+    .ministry-header .booking-btn {
+        font-size: 22px !important;
+        padding: 12px 20px !important;
+    }
+}
+</style>
+        <div class="header-main">
+            <div class="header-main-inner">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header-style-one-wrapper">
+                            <div class="left-area">
+                                <div class="logo-area">
+                                    <a href="index-nine.html" class="logo">
+                                        <img class="light" src="assets/images/logo/mjs.png" alt="logo">
+                                        <img class="dark" src="assets/images/logo/mjs.png" alt="logo">
+                                    </a>
+                                </div>
+                                <nav class="main-nav-area">
+                                    <ul class="list-unstyled rts-desktop-menu">
+                                        <li class="menu-item rts-has-dropdown">
+                                            <a class="main-element rts-dropdown-main-element" href="index-nine.html">الرئيسية</a>
+                                            <!-- Start Dropdown Menu -->
+                                            <ul class="rts-submenu list-unstyled menu-home">
+
+                                            </ul>
+                                            <!-- End Dropdown Menu -->
+                                        </li>
+                                        <li class="menu-item rts-has-dropdown">
+                                            <a href="index-Accommodation.html" class="rts-dropdown-main-element">مراكز
+                                                الإقامة</a>
+                                            <!-- Start Dropdown Menu -->
+                                            <ul class="rts-submenu list-unstyled menu-home">
+                                                <ul class="rts-submenu list-unstyled menu-home">
+
+                                                </ul>
+
+                                            </ul>
+                                            <!-- End Dropdown Menu -->
+                                        </li>
+                                        <li class="menu-item rts-has-dropdown">
+                                            <a href="index.html" class="rts-dropdown-main-element">شروط وكيفية الحجز
+                                            </a>
+                                            <!-- Start Dropdown Menu -->
+                                            <ul class="rts-submenu list-unstyled menu-home mega-menu">
+                                                <li>
+                                                    <div class="row p-0">
+                                                        <div class="col-lg-8">
+                                                            <div class="inner">
+
+                                                                <h4>استكشف ولاياتنا</h4>
+                                                                <div class="destination-area-wrapper">
+                                                                    <div class="region-area">
+                                                                        <ul>
+                                                                            <li data-region="tunis" class="active">تونس
+                                                                            </li>
+                                                                            <li data-region="ariana">أريانة</li>
+                                                                            <li data-region="benarous">بن عروس</li>
+                                                                            <li data-region="manouba">منوبة</li>
+                                                                            <li data-region="nabeul">نابل</li>
+                                                                            <li data-region="zaghouan">زغوان</li>
+                                                                            <li data-region="bizerte">بنزرت</li>
+                                                                            <li data-region="beja">باجة</li>
+                                                                            <li data-region="jendouba">جندوبة</li>
+                                                                            <li data-region="kef">الكاف</li>
+                                                                            <li data-region="siliana">سليانة</li>
+                                                                            <li data-region="sousse">سوسة</li>
+                                                                            <li data-region="monastir">المنستير</li>
+                                                                            <li data-region="mahdia">المهدية</li>
+                                                                            <li data-region="kairouan">القيروان</li>
+                                                                            <li data-region="kasserine">القصرين</li>
+                                                                            <li data-region="sidibouzid">سيدي بوزيد</li>
+                                                                            <li data-region="sfax">صفاقس</li>
+                                                                            <li data-region="gafsa">قفصة</li>
+                                                                            <li data-region="tozeur">توزر</li>
+                                                                            <li data-region="kebili">قبلي</li>
+                                                                        </ul>
+                                                                        <a href="index-nine.html"
+                                                                                class="view-all-btn">عرض الكل</a>
+                                                                    </div>
+                                                                    <div class="destinations">
+                                                                        <div class="destlist active"
+                                                                            data-region="europe">
+                                                                            <div
+                                                                                class="destination-wrapper-3 radius-10 image-transform">
+                                                                                <div class="image-area">
+                                                                                    <a href="index-nine.html">
+                                                                                        <img class="hover-image"
+                                                                                            src="assets/images/pays/djerba.webp"
+                                                                                            alt="">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="content">
+                                                                                    <h6 class="title"><a
+                                                                                            href="index-nine.html">جربة
+                                                                                        </a></h6>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class="destination-wrapper-3 radius-10 image-transform">
+                                                                                <div class="image-area">
+                                                                                    <a href="index-nine.html">
+                                                                                        <img class="hover-image"
+                                                                                            src="assets/images/pays/bizerte.webp"
+                                                                                            alt="">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="content">
+                                                                                    <h6 class="title"><a
+                                                                                            href="index-nine.html">بنزرت</a>
+                                                                                    </h6>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class="destination-wrapper-3 radius-10 image-transform">
+                                                                                <div class="image-area">
+                                                                                    <a href="index-nine.html">
+                                                                                        <img class="hover-image"
+                                                                                            src="assets/images/pays/kairouan.webp"
+                                                                                            alt="">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="content">
+                                                                                    <h6 class="title"><a
+                                                                                            href="index-nine.html">القيروان</a>
+                                                                                    </h6>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class="destination-wrapper-3 radius-10 image-transform">
+                                                                                <div class="image-area">
+                                                                                    <a href="destination-details.html">
+                                                                                        <img class="hover-image"
+                                                                                            src="assets/images/pays/tozeur.webp"
+                                                                                            alt="">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="content">
+                                                                                    <h6 class="title"><a
+                                                                                            href="index-nine.html">توزر</a>
+                                                                                    </h6>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="destlist" data-region="asia">
+                                                                            <div
+                                                                                class="destination-wrapper-3 radius-10 image-transform">
+                                                                                <div class="image-area">
+                                                                                    <a href="destination-details.html">
+                                                                                        <img class="hover-image"
+                                                                                            src="assets/images/pays/mahdia.webp"
+                                                                                            alt="">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="content">
+                                                                                    <h6 class="title"><a
+                                                                                            href="index-nine.html">المهدية
+                                                                                        </a></h6>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                        <a href="index-nine.html"
+                                                                            class="view-all-btn">عرض الكل
+                                                                            الوجهة</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 p-0">
+                                                            <div class="ad-image">
+                                                                <img src="assets/images/destination/25.webp" alt="">
+                                                                <div class="ad-content">
+                                                                    <h5 class="ad-title">اهرب من المألوف — اكتشف
+                                                                        the World!</h5>
+                                                                    <a class="rts-btn btn-primary with-arrow"
+                                                                        href="index-nine.html">اكتشف المزيد <i
+                                                                            class="fa-regular fa-arrow-up up-right"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <!-- End Dropdown Menu -->
+                                        </li>
+                                        <li class="menu-item rts-has-dropdown">
+                                            <a href="index-image.html" class="rts-dropdown-main-element">مكتبة الصور</a>
+                                            <!-- Start Dropdown Menu -->
+                                            <ul class="rts-submenu list-unstyled menu-home">
+
+
+                                            </ul>
+                                            <!-- End Dropdown Menu -->
+                                        </li>
+                                        <li class="menu-item"><a class="main-element rts-dropdown-main-element"
+                                                href="contact.html">إتصل بنا</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="button-area-start">
+                                <div class="shop-btn-area">
+                                    <a href="index-nine.html" class="user-btn round-btn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9998 1.5C14.7836 1.50314 17.4523 2.61065 19.4207 4.5791C21.3892 6.54755 22.4967 9.21619 22.4998 12C22.4998 14.0766 21.8839 16.1064 20.7303 17.833C19.5766 19.5597 17.9369 20.9064 16.0184 21.7012C14.0998 22.4959 11.9878 22.703 9.951 22.2979C7.91437 21.8926 6.04337 20.8931 4.57502 19.4248C3.10668 17.9565 2.10718 16.0855 1.70197 14.0488C1.29683 12.012 1.50393 9.90007 2.29865 7.98145C3.09338 6.06289 4.44015 4.42325 6.16682 3.26953C7.89346 2.11593 9.92326 1.5 11.9998 1.5ZM9.74983 16.5C9.15329 16.5007 8.5818 16.7383 8.15998 17.1602C7.73817 17.582 7.50048 18.1535 7.49983 18.75V19.7822C8.86545 20.5796 10.4184 21 11.9998 21C13.5812 21 15.1342 20.5796 16.4998 19.7822V18.75C16.4992 18.1535 16.2615 17.582 15.8397 17.1602C15.4179 16.7383 14.8464 16.5007 14.2498 16.5H9.74983ZM11.9998 2.98145C10.1765 2.98145 8.39597 3.53501 6.89436 4.56934C5.3928 5.60366 4.24053 7.06987 3.59065 8.77344C2.94084 10.477 2.82358 12.3378 3.25471 14.1094C3.68588 15.881 4.64561 17.4799 6.00569 18.6943C6.0206 17.7105 6.4215 16.7721 7.1219 16.0811C7.82229 15.3901 8.76593 15.0017 9.74983 15H14.2498C15.2337 15.0017 16.1774 15.3901 16.8778 16.0811C17.5782 16.7721 17.9791 17.7105 17.994 18.6943C19.354 17.4799 20.3138 15.881 20.7449 14.1094C21.1761 12.3378 21.0588 10.477 20.409 8.77344C19.7591 7.06987 18.6069 5.60366 17.1053 4.56934C15.6037 3.53501 13.8232 2.98145 11.9998 2.98145ZM11.9998 6C12.9944 6 13.9479 6.39537 14.6512 7.09863C15.3545 7.80189 15.7498 8.75544 15.7498 9.75C15.7498 10.4915 15.5299 11.2164 15.118 11.833C14.706 12.4496 14.1205 12.931 13.4354 13.2148C12.7502 13.4987 11.9958 13.5724 11.2684 13.4277C10.541 13.283 9.87291 12.9258 9.34846 12.4014C8.82401 11.8769 8.46679 11.2089 8.32209 10.4814C8.17742 9.75405 8.25117 8.99965 8.53498 8.31445C8.81883 7.62936 9.30023 7.04383 9.91682 6.63184C10.5334 6.21992 11.2583 6 11.9998 6ZM12.8612 7.6709C12.4502 7.50067 11.9977 7.45629 11.5613 7.54297C11.1249 7.62979 10.7237 7.84451 10.409 8.15918C10.0943 8.47385 9.87961 8.87507 9.79279 9.31152C9.70611 9.74782 9.75049 10.2004 9.92072 10.6113C10.091 11.0224 10.3798 11.3739 10.7498 11.6211C11.1198 11.8683 11.5549 12 11.9998 12C12.5964 11.9993 13.1679 11.7617 13.5897 11.3398C14.0115 10.918 14.2492 10.3465 14.2498 9.75C14.2498 9.30505 14.1181 8.86998 13.8709 8.5C13.6237 8.13002 13.2722 7.8412 12.8612 7.6709Z"
+                                                fill="#121212" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a href="search.html" class="rts-btn btn-primary border radius-100">حجز جولة</a>
+                                <div class="menu-btn menu-btn-toggle radius-6" id="menu-btn">
+                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="14" width="20" height="2" fill="#FFFFFF"></rect>
+                                        <rect y="7" width="20" height="2" fill="#FFFFFF"></rect>
+                                        <rect width="20" height="2" fill="#FFFFFF"></rect>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- breadcrumb area start -->
+    <!-- rts breadcrumb area start -->
+    <div class="rts-breadcrumb-area one" data-bg-src="assets/images/breadcrumb/08.webp">
+        <div class="container h-100">
+            <div class="breadcrumb-area-wrapper">
+                <div class="nav-bread-crumb">
+                    <a href="index-nine.html">الرئيسية</a>
+                    <span><i class="fa-regular fa-chevron-right"></i></span>
+                    <a href="contact.html" class="current">اتصل بنا</a>
+                </div>
+                <h1 class="title">اتصل بنا</h1>
+            </div>
+        </div>
+    </div>
+    <!-- rts breadcrumb area end -->
+    <!-- breadcrumb area end -->
+
+    <!-- rts contact area start -->
+    <section class="rts-contact-area inner rts-section-gap">
+        <div class="container">
+            <div class="section-inner body-bg-one radius-10">
+                <form class="contact-form" id="contact-form" method="POST" action="mailer.php">
+                    <h4 class="title">معلوماتك</h4>
+                    <div class="form-inner">
+                        <div class="left">
+                            <div class="single-input-wrapper">
+                                <label for="name">الاسم الكامل*</label>
+                                <input type="text" id="name" name="name" placeholder="أدخل اسمك الكامل" required>
+                            </div>
+                            <div class="single-input-wrapper">
+                                <label for="email">البريد الإلكتروني*</label>
+                                <input type="email" id="email" name="email" placeholder="عنوان بريدك الإلكتروني"
+                                    required>
+                            </div>
+                            <div class="single-input-wrapper">
+                                <label for="company">الشركة</label>
+                                <input type="text" id="company" name="company" placeholder="اسم شركتك" required>
+                            </div>
+                            <div class="single-input-wrapper">
+                                <label for="website">الموقع الإلكتروني</label>
+                                <input type="text" id="website" name="website" placeholder="موقعك الإلكتروني" required>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="single-input-wrapper">
+                                <label for="message">استفسارك*</label>
+                                <textarea name="message" id="message" placeholder="أدخل رسالتك هنا" required></textarea>
+                            </div>
+                            <div class="single-input-wrapper">
+                                <button type="submit" class="rts-btn btn-primary with-arrow">ابدأ الآن <i
+                                        class="fa-regular fa-arrow-up up-right"></i></button>
+                            </div>
+                            <div id="form-messages" class="mt-15 cb"></div>
+                            <p class="desc">يرجى قراءة <a href="#"> سياسة الخصوصية</a> و <a href="#">سياسة الكوكيز</a>
+                                الخاصة بنا لفهم كيفية جمعنا واستخدامنا لبياناتك الشخصية.</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="contact-form-content-bottom-wrapper mt--30">
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <div class="single-contact-card body-bg-one radius-10">
+                            <div class="top-area">
+                                
+                                <h4 class="title">موقعنا</h4>
+                            </div>
+                            <p class="disc">
+
+                                تونس العاصمة، تونس
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-contact-card body-bg-one radius-10">
+                            <div class="top-area">
+                                
+                                <h4 class="title">راسلنا على البريد</h4>
+                            </div>
+                            <p class="disc">
+                                فريق الدعم لدينا هنا لمساعدتك
+                            </p>
+                            <a href="contact.html">support@mjs.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-contact-card body-bg-one radius-10">
+                            <div class="top-area">
+                                
+                                <h4 class="title">اتصل بنا</h4>
+                            </div>
+                            <p class="disc">
+                                فريق دعم العملاء لدينا متاح
+                            </p>
+                            <a href="#">71.841.433 (216+)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- rts contact area end -->
+
+
+    <!-- rts faq area start -->
+    <section class="rts-faq-area kayaking rts-section-gapTop">
+        <div class="container">
+            <div class="section-inner">
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <div class="image-area overflow-hidden radius-10 wow zoomIn" data-wow-delay="0.4s">
+                            <img class="wow scaleIn" data-wow-delay="0.4s" src="assets/images/about/03.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="faq-content">
+                            <div class="section-title-area">
+                                <h2 class="section-title mb-0">هل لديك أسئلة؟</h2>
+                            </div>
+
+                            <div class="accordion-faq-one mt--60">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                هل أحتاج إلى أي خبرة في التجديف؟
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                يوفر الاستوديو الخاص بنا مجموعة واسعة من الخدمات الإبداعية، بما في ذلك
+                                                التصميم، والعلامات التجارية، وتطوير الويب، والتصميم الجرافيكي، وإنتاج
+                                                الفيديو.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                هل التجديف آمن لغير السباحين؟
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                يوفر الاستوديو الخاص بنا مجموعة واسعة من الخدمات الإبداعية، بما في ذلك
+                                                التصميم، والعلامات التجارية، وتطوير الويب، والتصميم الجرافيكي، وإنتاج
+                                                الفيديو.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                ماذا يجب أن أحضر في رحلة التجديف؟
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                يوفر الاستوديو الخاص بنا مجموعة واسعة من الخدمات الإبداعية، بما في ذلك
+                                                التصميم، والعلامات التجارية، وتطوير الويب، والتصميم الجرافيكي، وإنتاج
+                                                الفيديو.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                aria-expanded="false" aria-controls="collapseFour">
+                                                ماذا يحدث إذا كان الطقس سيئًا؟
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                يوفر الاستوديو الخاص بنا مجموعة واسعة من الخدمات الإبداعية، بما في ذلك
+                                                التصميم، والعلامات التجارية، وتطوير الويب، والتصميم الجرافيكي، وإنتاج
+                                                الفيديو.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- rts faq area end -->
+    <!-- rts footer area start -->
+    <div class="rts-footer-area-one kayaking pt--100 pb--30">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="left">
+                    <div class="single-footer-widget-one logo-area">
+                        <a href="#" class="logo">
+                            <img class="light" src="assets/images/logo/mjs.png" alt="logo">
+                        </a>
+                        <p class="desc">نحن نعتني بكل التفاصيل لتتمكن من السفر بثقة وراحة.</p>
+                        <div class="get-btn-area d-flex flex-column gap-2">
+                            <a href="#"><img src="assets/images/footer/app-01.svg" alt=""></a>
+                            <a href="#"><img src="assets/images/footer/app-02.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mid d-flex justify-content-center">
+                    <div class="single-footer-widget-one essential-links">
+                        <h6 class="title">روابط سريعة</h6>
+                        <ul>
+                            <li><svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0L6.75 5L0.5 10V0Z" fill="#BA6827" />
+                                </svg>
+                                <a href="index-image.html">جولات مميزة</a>
+                            </li>
+                            <li><svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0L6.75 5L0.5 10V0Z" fill="#BA6827" />
+                                </svg>
+                                <a href="index-image.html">وجهات</a>
+                            </li>
+                            <li><svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0L6.75 5L0.5 10V0Z" fill="#BA6827" />
+                                </svg>
+                                <a href="index-nine.html">معلومات عنا</a>
+                            </li>
+                            <li><svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0L6.75 5L0.5 10V0Z" fill="#BA6827" />
+                                </svg>
+                                <a href="contact.html">مرشدو السفر</a>
+                            </li>
+                            <li><svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0L6.75 5L0.5 10V0Z" fill="#BA6827" />
+                                </svg>
+                                <a href="index-Accommodation.html">نوع الجولة</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="single-footer-widget-one essential-links">
+                        <h6 class="title">موقع شهير</h6>
+                        <ul>
+                            <li><svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0L6.75 5L0.5 10V0Z" fill="#BA6827" />
+                                </svg>
+                                <a href="index-nine.html">المهدية</a>
+                            </li>
+                            <li><svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0L6.75 5L0.5 10V0Z" fill="#BA6827" />
+                                </svg>
+                                <a href="index-nine.html">سوسة</a>
+                            </li>
+                            <li><svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0L6.75 5L0.5 10V0Z" fill="#BA6827" />
+                                </svg>
+                                <a href="index-nine.html">جيرجيس</a>
+                            </li>
+                            <li><svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0L6.75 5L0.5 10V0Z" fill="#BA6827" />
+                                </svg>
+                                <a href="index-nine.html">بنزرت</a>
+                            </li>
+                            <li><svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0L6.75 5L0.5 10V0Z" fill="#BA6827" />
+                                </svg>
+                                <a href="index-nine.html">باجة</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="single-footer-widget-one essential-links">
+                        <h6 class="title">الدعم</h6>
+                        <ul>
+                            <li><svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0L6.75 5L0.5 10V0Z" fill="#119CE6" />
+                                </svg>
+                                <a href="contact.html">مركز المساعدة</a>
+                            </li>
+                            <li><svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0L6.75 5L0.5 10V0Z" fill="#119CE6" />
+                                </svg>
+                                <a href="contact.html">اتصل بنا</a>
+                            </li>
+                            <li><svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0L6.75 5L0.5 10V0Z" fill="#119CE6" />
+                                </svg>
+                                <a href="contact.html">دليل الحجز</a>
+                            </li>
+                            <li><svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0L6.75 5L0.5 10V0Z" fill="#119CE6" />
+                                </svg>
+                                <a href="contact.html">سياسة الخصوصية</a>
+                            </li>
+                            <li><svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0L6.75 5L0.5 10V0Z" fill="#119CE6" />
+                                </svg>
+                                <a href="contact.html">الأسئلة الشائعة</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="footer-input-main-wrapper-one">
+                        <div class="single-footer-widget-one">
+                            <h6 class="title">النشرة الإخبارية</h6>
+                            <p class="desc">اشترك في نشرتنا الإخبارية</p>
+                            <form action="#">
+                                <input type="email" placeholder="عنوان البريد الإلكتروني.." required>
+                                <button class="rts-btn btn-primary border">اشترك</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- copyright area start -->
+                    <div class="copyright-area-start">
+                        <p>حقوق النشر ©
+                            <script>
+                                document.write(
+                                    new Date().getFullYear()
+                                )
+                            </script> جميع الحقوق محفوظة، تصميم بواسطة <span><a href="index.html">توريذا</a></span>
+                        </p>
+                        <ul>
+                            <li><a href="#"><img src="assets/images/others/payment-01.svg" alt=""></a></li>
+                            <li><a href="#"><img src="assets/images/others/payment-02.svg" alt=""></a></li>
+                            <li><a href="#"><img src="assets/images/others/payment-03.svg" alt=""></a></li>
+                            <li><a href="#"><img src="assets/images/others/payment-04.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <!-- copyright area end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- rts footer area end -->
+
+    <div id="side-bar" class="side-bar header-two header-eight">
+        <button class="close-icon-menu"><i class="fa-sharp fa-thin fa-xmark"></i></button>
+        <a class="logo" href="index.html"><img src="assets/images/logo/02.svg" alt=""></a>
+        <!-- mobile menu area start -->
+        <div class="mobile-menu-main">
+            <nav class="nav-main mainmenu-nav mt--30">
+                <ul class="mainmenu metismenu" id="mobile-menu-active">
+                    <li class="has-droupdown">
+                        <a href="index-nine.html" class="main">الرئيسية</a>
+
+                    </li>
+                    <li class="has-droupdown">
+                        <a href="index-Accommodation.html" class="main">الجولة</a>
+
+                    </li>
+                    <li class="has-droupdown">
+                        <a href="#" class="main">الوجهات</a>
+                        <ul class="submenu mm-collapse">
+                            <li><a class="mobile-menu-link" href="destination.html">الوجهات</a></li>
+                            <li><a class="mobile-menu-link" href="destination-details.html">تفاصيل الوجهات</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-droupdown">
+                        <a href="index-image.html" class="main">الصفحات</a>
+
+                    </li>
+                    <li>
+                        <a href="contact.html" class="main">اتصل بنا</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="follow-us">
+                <ul>
+                    <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"
+                                style="font-family: &quot;Font Awesome 6 Brands&quot;, Bangla867, sans-serif;"></i></a>
+                    </li>
+                    <li><a href="#" aria-label="twitter"><i class="fab fa-twitter"
+                                style="font-family: &quot;Font Awesome 6 Brands&quot;, Bangla867, sans-serif;"></i></a>
+                    </li>
+                    <li><a href="#" aria-label="instagram"><i class="fab fa-instagram"
+                                style="font-family: &quot;Font Awesome 6 Brands&quot;, Bangla867, sans-serif;"></i></a>
+                    </li>
+                    <li><a href="#" aria-label="linkdin"><i class="fa-brands fa-linkedin-in"
+                                style="font-family: &quot;Font Awesome 6 Brands&quot;, Bangla867, sans-serif;"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- mobile menu area end -->
+    </div>
+
+    <div id="side-bar2" class="side-bar side-bar2">
+        <div class="rts-sidebar-menu-desktop">
+            <button class="close-icon-menu" aria-label="footer_Button"><i class="far fa-times"></i></button>
+            <div class="body d-none d-lg-block">
+                <div class="about-us">
+                    <a class="logo" href="index.html"><img src="assets/images/logo/02.svg" alt=""></a>
+                    <p>
+                        اكتشف العالم، <br> مغامرة كاملة في كل مرة!
+                    </p>
+                </div>
+                <div class="gallery-image-area">
+                    <div class="gallery-wrapper with-icon">
+                        <a href="assets/images/gallery/06.webp" class="gallery-image image-transform">
+                            <img class="hover-image" src="assets/images/gallery/06.webp" width="190" alt="">
+                            <span class="icon"><img src="assets/images/gallery/insta.svg" alt=""></span>
+                        </a>
+                    </div>
+                    <div class="gallery-wrapper with-icon">
+                        <a href="assets/images/gallery/07.webp" class="gallery-image image-transform">
+                            <img class="hover-image" src="assets/images/gallery/07.webp" width="190" alt="">
+                            <span class="icon"><img src="assets/images/gallery/insta.svg" alt=""></span>
+                        </a>
+                    </div>
+                    <div class="gallery-wrapper with-icon">
+                        <a href="assets/images/gallery/08.webp" class="gallery-image image-transform">
+                            <img class="hover-image" src="assets/images/gallery/08.webp" width="190" alt="">
+                            <span class="icon"><img src="assets/images/gallery/insta.svg" alt=""></span>
+                        </a>
+                    </div>
+                    <div class="gallery-wrapper with-icon">
+                        <a href="assets/images/gallery/09.webp" class="gallery-image image-transform">
+                            <img class="hover-image" src="assets/images/gallery/09.webp" width="190" alt="">
+                            <span class="icon"><img src="assets/images/gallery/insta.svg" alt=""></span>
+                        </a>
+                    </div>
+                    <div class="gallery-wrapper with-icon">
+                        <a href="assets/images/gallery/10.webp" class="gallery-image image-transform">
+                            <img class="hover-image" src="assets/images/gallery/10.webp" width="190" alt="">
+                            <span class="icon"><img src="assets/images/gallery/insta.svg" alt=""></span>
+                        </a>
+                    </div>
+                    <div class="gallery-wrapper with-icon">
+                        <a href="assets/images/gallery/12.webp" class="gallery-image image-transform">
+                            <img class="hover-image" src="assets/images/gallery/11.webp" width="190" alt="">
+                            <span class="icon"><img src="assets/images/gallery/insta.svg" alt=""></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="get-in-touch">
+                    <!-- title -->
+                    <h4>ابقى على تواصل</h4>
+                    <!-- title End -->
+                    <div class="wrapper">
+                        <!-- single -->
+                        <div class="single">
+                            <i class="fas fa-phone-alt"
+                                style="font-family: &quot;Font Awesome 6 Pro&quot;, Bangla867, sans-serif;"></i>
+                            <a href="#">71.841.433 (216+)</a>
+                        </div>
+                        <!-- single ENd -->
+                        <!-- single -->
+                        <div class="single">
+                            <i class="fas fa-envelope"
+                                style="font-family: &quot;Font Awesome 6 Pro&quot;, Bangla867, sans-serif;"></i>
+                            <a href="#">
+                                info@mjs.tn</a>
+                        </div>
+                        <!-- single ENd -->
+                        <!-- single -->
+                        <div class="single">
+                            <i class="fas fa-globe"
+                                style="font-family: &quot;Font Awesome 6 Pro&quot;, Bangla867, sans-serif;"></i>
+                            <a href="#">www.mjs.com</a>
+                        </div>
+                        <!-- single ENd -->
+                        <!-- single -->
+                        <div class="single">
+                            <i class="fas fa-map-marker-alt"
+                                style="font-family: &quot;Font Awesome 6 Pro&quot;, Bangla867, sans-serif;"></i>
+                            <a href="#">
+                                تونس العاصمة، تونس</a>
+                        </div>
+                        <!-- single ENd -->
+                    </div>
+                </div>
+                <div class="follow-us">
+                    <!-- title -->
+                    <h4>تابعنا</h4>
+                    <!-- title End -->
+                    <ul>
+                        <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"
+                                    style="font-family: &quot;Font Awesome 6 Brands&quot;, Bangla867, sans-serif;"></i></a>
+                        </li>
+                        <li><a href="#" aria-label="twitter"><i class="fab fa-twitter"
+                                    style="font-family: &quot;Font Awesome 6 Brands&quot;, Bangla867, sans-serif;"></i></a>
+                        </li>
+                        <li><a href="#" aria-label="instagram"><i class="fab fa-instagram"
+                                    style="font-family: &quot;Font Awesome 6 Brands&quot;, Bangla867, sans-serif;"></i></a>
+                        </li>
+                        <li><a href="#" aria-label="linkdin"><i class="fa-brands fa-linkedin-in"
+                                    style="font-family: &quot;Font Awesome 6 Brands&quot;, Bangla867, sans-serif;"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu area end -->
+    </div>
+
+
+    <div id="anywhere-home" class="">
+    </div>
+
+    <div class="slider-drag-cursor"><i class="fas fa-angle-left me-2"></i> اسحب <i class="fas fa-angle-right ms-2"></i>
+    </div>
+
+    <!-- progress area start -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+            </path>
+        </svg>
+    </div>
+    <!-- progress area end -->
+
+    <div class="rtl-ltr-switcher-btn ">
+        <span class="ltr show">عرض LTR</span>
+        <span class="rtl">عرض RTL</span>
+    </div>
+
+
+
+    <!-- jquery js -->
+    <script defer src="assets/js/plugins/jquery.min.js"></script>
+    <script defer src="assets/js/plugins/bootstrap.min.js"></script>
+    <script defer src="assets/js/plugins/metismenu.js"></script>
+    <script defer src="assets/js/vendor/jqueryui.js"></script>
+    <script defer src="assets/js/vendor/waypoint.js"></script>
+    <script defer src="assets/js/plugins/swiper.js"></script>
+    <script defer src="assets/js/plugins/smoothscroll.js"></script>
+    <script defer src="assets/js/vendor/wow.js"></script>
+    <script defer src="assets/js/plugins/odometer.js"></script>
+    <script defer src="assets/js/plugins/magnific-popup.js"></script>
+    <script defer src="assets/js/plugins/isotop.js"></script>
+    <script defer src="assets/js/plugins/contact-form.js"></script>
+    <script defer src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
